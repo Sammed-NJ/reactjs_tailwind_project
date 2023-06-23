@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -29,10 +29,10 @@ const Navbar = () => {
         <div className={`navbar ${active ? "bg-white text-black" : "bg-green-900 text-white"} sticky top-0 flex items-center flex-col transition-all duration-200 ease-in`} >
             <div className='w-4/5 flex justify-between py-4 '>
                 <div className='text-4xl'>
-                    {/* <Link to='/'> */}
-                    <span className='font-bold'>fiverr</span>
-                    <span className='text-green-600'>.</span>
-                    {/* </Link> */}
+                    <Link to='/'>
+                        <span className='font-bold'>fiverr</span>
+                        <span className='text-green-600'>.</span>
+                    </Link>
                 </div>
                 <div className='flex gap-4 items-center font-medium'>
                     <ul className='flex gap-4 items-center relative'>
@@ -50,14 +50,14 @@ const Navbar = () => {
                                         {
                                             currentUser?.isSeller && (
                                                 <>
-                                                    <li className='cursor-pointer'>Gigs</li>
-                                                    <li className='cursor-pointer'>Add Gigs</li>
+                                                    <Link to="/myGigs" className='cursor-pointer'>Gigs</Link>
+                                                    <Link to="/add" className='cursor-pointer'>Add Gigs</Link>
                                                 </>
                                             )
                                         }
-                                        <li className='cursor-pointer'>Orders</li>
-                                        <li className='cursor-pointer'>Messages</li>
-                                        <li className='cursor-pointer'>Logout</li>
+                                        <Link to="/orders" className='cursor-pointer'>Orders</Link>
+                                        <Link to="/messages" className='cursor-pointer'>Messages</Link>
+                                        <Link to="/" className='cursor-pointer'>Logout</Link>
                                     </ul>
                                 </div>}
                             </li>
