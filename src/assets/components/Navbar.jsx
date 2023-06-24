@@ -26,7 +26,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`navbar ${active ? "bg-white text-black" : "bg-green-900 text-white"} sticky top-0 flex items-center flex-col transition-all duration-200 ease-in`} >
+        <div className={`navbar ${active ? "bg-white text-black" : "bg-green-950 text-white"} sticky top-0 flex items-center flex-col transition-all duration-200 ease-in`} >
             <div className='w-4/5 flex justify-between py-4 '>
                 <div className='text-4xl'>
                     <Link to='/'>
@@ -38,12 +38,12 @@ const Navbar = () => {
                     <ul className='flex gap-4 items-center relative'>
                         <li className='cursor-pointer'>Fiverr Business</li>
                         <li className='cursor-pointer'>Explore</li>
-                        <li className='cursor-pointer'>English</li>
+                        <li className='cursor-pointer flex items-center gap-1'><img className='w-4 h-4' src='../../../public/img/language.png' alt='select_language' /> English</li>
                         <li className='cursor-pointer'>Sign in</li>
                         {!currentUser?.isSeller && <li> Become a Seller</li>}
                         {currentUser && (
                             <li className='user flex items-center justify-center cursor-pointer' onClick={() => setOpen(!open)}>
-                                <img src="/src/assets/imgs/account.png" alt="user_icon" className='w-12 h-12' />
+                                <img src="../../../public/img/account.png" alt="user_icon" className='w-7 h-7' />
                                 <span>{currentUser?.username}</span>
                                 {open && <div className='options p-3 absolute top-12 right-2 rounded bg-gray-50 w-[200px] overflow-hidden'>
                                     <ul className='text-gray-500 text-sm font-normal flex flex-col gap-3'>

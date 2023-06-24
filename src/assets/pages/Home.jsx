@@ -1,10 +1,14 @@
 import React from 'react'
-import Featured from '../featured/Featured'
+import Featured from '../components/Featured'
+import TrustedBy from '../components/TrustedBy'
+import Slide from '../components/Slide'
 
 const Home = () => {
     return (
         <div>
             <Featured />
+            <TrustedBy />
+            <Slide />
         </div>
     )
 }

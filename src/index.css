@@ -1,5 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Work+Sans:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* MY STYLES */
+
+@layer components {
+  .popular-btn {
+    @apply text-white bg-transparent border-[1px] border-solid border-white rounded-2xl py-1 px-3 text-xs cursor-pointer;
+  }
+}
+
+.styler-text {
+  font-family: "Playfair Display", serif;
+}
+.styler-text-h1 {
+  font-family: "Work Sans", sans-serif;
+}
