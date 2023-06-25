@@ -1,20 +1,19 @@
 import React from 'react'
 import Slider from 'infinite-react-carousel';
-import { cards } from '../../data';
-import CategoryCard from './CategoryCard';
 
-const Slide = () => {
+
+const Slide = ({ children, slidesToShow, arrowsScroll }) => {
     return (
-        <div>
-            <div>
-                <Slider>
-                    {cards.map(card => (
-                        <CategoryCard card={card} key={card.id} />
-                    ))}
+        <div className='flex justify-center py-[100px]'>
+            <div className='container'>
+                <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
+                    {children}
                 </Slider>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Slide
+
+

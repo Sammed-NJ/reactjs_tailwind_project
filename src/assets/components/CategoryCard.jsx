@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const CategoryCard = ({ card }) => {
+const CategoryCard = ({ item }) => {
     return (
-        <Link to="/gigs?cat=design">
-            <div className='w-[252px] h-[344px] text-white rounded cursor-pointer relative'>
-                <img className='w-[100px] h-full object-cover' src={card.img} href={card.desc} />
-                <span className='font-light absolute top-4 left-4'>{card.desc}</span>
-                <span className='font-medium text-2xl top-10'>{card.title}</span>
+        <Link to="/gigs?cat=design" className='block w-[252px] h-[344px] text-white rounded-md cursor-pointer relative'>
+            <div className='w-[252px] h-[344px] text-white rounded-md cursor-pointer relative overflow-hidden'>
+                <img className='w-full h-full object-cover' src={item.img} href={item.desc} />
+                <span className='font-light absolute top-4 left-4'>{item.desc}</span>
+                <span className='font-medium text-2xl absolute top-10 left-4'>{item.title}</span>
             </div>
         </Link>
     )

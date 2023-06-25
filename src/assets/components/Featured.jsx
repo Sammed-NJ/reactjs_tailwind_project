@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 const Featured = () => {
     return (
@@ -10,7 +10,7 @@ const Featured = () => {
                         <h1 className='text-5xl font-medium styler-text-h1'>Find the right <span className='styler-text'>freelance <br /> service</span>, right away</h1>
                         <div className='flex items-center justify-between bg-white rounded w-[700px]'>
                             <div className='flex items-center gap-3'>
-                                <img className='w-5 h-5 m-3' src='../../../public/img/search.png' href='' />
+                                <img className='w-5 h-5 m-3' src='/img/search.png' href='' />
                                 <input className='border-none outline-none text-black' type='text' placeholder='Try "building mobile app"'></input>
                             </div>
                             <button className='w-32 h-12 border-none hover:bg-green-500 bg-green-600 text-white cursor-pointer'>Search</button>
@@ -24,7 +24,7 @@ const Featured = () => {
                         </div>
                     </div>
                     <div>
-                        <img className='h-full object-contain' src='../../../public/img/man.png' href='portrait' />
+                        <img className='h-full object-contain' src='/img/man.png' href='portrait' />
                     </div>
                 </div>
             </div>

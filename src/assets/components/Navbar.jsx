@@ -38,12 +38,12 @@ const Navbar = () => {
                     <ul className='flex gap-4 items-center relative'>
                         <li className='cursor-pointer'>Fiverr Business</li>
                         <li className='cursor-pointer'>Explore</li>
-                        <li className='cursor-pointer flex items-center gap-1'><img className='w-4 h-4' src='../../../public/img/language.png' alt='select_language' /> English</li>
+                        <li className='cursor-pointer flex items-center gap-1'><img className='w-4 h-4' src='/img/language.png' alt='select_language' /> English</li>
                         <li className='cursor-pointer'>Sign in</li>
                         {!currentUser?.isSeller && <li> Become a Seller</li>}
                         {currentUser && (
                             <li className='user flex items-center justify-center cursor-pointer' onClick={() => setOpen(!open)}>
-                                <img src="../../../public/img/account.png" alt="user_icon" className='w-7 h-7' />
+                                <img src="/img/account.png" alt="user_icon" className='w-7 h-7' />
                                 <span>{currentUser?.username}</span>
                                 {open && <div className='options p-3 absolute top-12 right-2 rounded bg-gray-50 w-[200px] overflow-hidden'>
                                     <ul className='text-gray-500 text-sm font-normal flex flex-col gap-3'>
