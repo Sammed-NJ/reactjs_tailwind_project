@@ -15,34 +15,34 @@ const Home = () => {
                     <CategoryCard item={card} key={card.id} />
                 ))}
             </Slide>
-            <div>
-                <div>
-                    <div>
-                        <h1>The best part? Everything.</h1>
-                        <div>
-                            <img src='/img/check.png' alt='' />
+            <div className='bg-gray-200 flex justify-center p-[100px]'>
+                <div className='flex items-center gap-[200px]'>
+                    <div className='order-2 flex-col gap-4'>
+                        <h1 className='font-medium mb-3 text-3xl'>The best part? Everything.</h1>
+                        <div className='flex items-center gap-3 font-medium text-lg text-gray-800'>
+                            <img className='w-6 h-6' src='/img/check.png' alt='' />
                             Stick to your budget
                         </div>
-                        <p>Find the right service for every price point. No hourly rates, just project-based pricing.</p>
-                        <div>
-                            <img src='/img/check.png' alt='' />
+                        <p className='text-lg font-light text-gray-500'>Find the right service for every price point. No hourly rates, just project-based pricing.</p>
+                        <div className='flex items-center gap-3 font-medium text-lg text-gray-800'>
+                            <img className='w-6 h-6' src='/img/check.png' alt='' />
                             Get quality work done quickly
                         </div>
-                        <p>Hand your project over to a talented freelancer in minutes, get long-lasting results.</p>
-                        <div>
-                            <img src='/img/check.png' alt='' />
+                        <p className='text-lg font-light text-gray-500'>Hand your project over to a talented freelancer in minutes, get long-lasting results.</p>
+                        <div className='flex items-center gap-3 font-medium text-lg text-gray-800'>
+                            <img className='w-6 h-6' src='/img/check.png' alt='' />
                             Pay when you&apos;re happy
                         </div>
-                        <p>Upfront quotes mean no surprises. Payments only get released when you approve.</p>
-                        <div>
-                            <img src='/img/check.png' alt='' />
+                        <p className='text-lg font-light text-gray-500'>Upfront quotes mean no surprises. Payments only get released when you approve.</p>
+                        <div className='flex items-center gap-3 font-medium text-lg text-gray-800'>
+                            <img className='w-6 h-6' src='/img/check.png' alt='' />
                             Count on 24/7 support
                         </div>
-                        <p>Our round-the-clock support team is available to help anytime, anywhere.</p>
+                        <p className='text-lg font-light text-gray-500'>Our round-the-clock support team is available to help anytime, anywhere.</p>
                     </div>
-                    <div>
-                        <video src='/img/video.mp4'></video>
-                    </div>
+                    <divo className='order-3'>
+                        <video className='w-[720px]' src='/img/video.mp4'></video>
+                    </divo>
                 </div>
             </div>
         </div>

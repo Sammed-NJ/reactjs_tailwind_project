@@ -26,7 +26,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`navbar ${active ? "bg-white text-black" : "bg-green-950 text-white"} sticky top-0 flex items-center flex-col transition-all duration-200 ease-in`} >
+        <div className={`navbar ${active ? "bg-white text-black" : "bg-green-950 text-white"} sticky top-0 flex items-center flex-col transition-all duration-200 ease-in z-50`} >
             <div className='w-4/5 flex justify-between py-4 '>
                 <div className='text-4xl'>
                     <Link to='/'>
