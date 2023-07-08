@@ -10,6 +10,12 @@
   .popular-btn {
     @apply text-white bg-transparent border-[1px] border-solid border-white rounded-2xl py-1 px-3 text-xs cursor-pointer;
   }
+  .footer-helper-links {
+    @apply text-gray-500 hover:underline;
+  }
+  .footer-media-links {
+    @apply w-10 h-10 cursor-pointer hover:bg-gray-100 rounded-full flex justify-center items-center;
+  }
 }
 
 .font-playfair-display {
